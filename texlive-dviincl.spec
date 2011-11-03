@@ -1,3 +1,9 @@
+# revision 15878
+# category Package
+# catalog-ctan /graphics/metapost/contrib/macros/dviincl
+# catalog-date 2008-08-19 08:58:40 +0200
+# catalog-license pd
+# catalog-version 1.00
 Name:		texlive-dviincl
 Version:	1.00
 Release:	1
@@ -49,6 +55,7 @@ processed by MetaPost with an axiliary file.
 %doc %{_texmfdistdir}/doc/metapost/dviincl/test-bop.tex
 %doc %{_texmfdistdir}/doc/metapost/dviincl/testit.bat
 %doc %{_texmfdistdir}/doc/metapost/dviincl/testit.sh
+%doc %{_tlpkgobjdir}/*.tlpobj
 
 #-----------------------------------------------------------------------
 %prep
@@ -59,3 +66,5 @@ processed by MetaPost with an axiliary file.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar metapost doc %{buildroot}%{_texmfdistdir}
+mkdir -p %{buildroot}%{_tlpkgobjdir}
+cp -fpa tlpkg/tlpobj/*.tlpobj %{buildroot}%{_tlpkgobjdir}
