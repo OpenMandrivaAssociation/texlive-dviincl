@@ -6,7 +6,7 @@
 # catalog-version 1.00
 Name:		texlive-dviincl
 Version:	1.00
-Release:	2
+Release:	3
 Summary:	Include a DVI page into MetaPost output
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/graphics/metapost/contrib/macros/dviincl
